@@ -54,7 +54,6 @@ public class TestSuite {
 	public void testBookStoreGet() {
 		// Test BookStore's retrieval method
 		Book book = _bookStoreInstance.getBook(501145254);
-		System.out.println(book);
 		assertEquals(501145254, book.getIsbn());
 		assertEquals("My_Own_Words", book.getTitle());
 		assertEquals("Bibliography", book.getGenre());
