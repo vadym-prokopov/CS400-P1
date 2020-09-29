@@ -1,6 +1,10 @@
+# CS400 Project 1 - Book Store
+The following is a repository for project 1 in CS400.
+### Prerequisites:
+	
 
-# CS400-P1
-CS400 Project 1 - Book Store
+ - Java 11.08+
+ - Make 4.2.1+
 
 ### Running The App:
 Use the following command to run the application:
