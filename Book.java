@@ -1,3 +1,10 @@
+// --== CS400 File Header Information ==--
+// Name: Elaine Zheng
+// Email: ezheng6@wisc.edu
+// Team: EE
+// Role: Data Wrangler
+// TA: Keren Chen
+// Lecturer: Gary Dahl
 
 /**
  * This class represents a book available in the bookstore
