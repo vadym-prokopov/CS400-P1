@@ -43,18 +43,19 @@ public class BookStoreDriver {
 			System.out.println("Please enter the 13 digit ISBN number. This field must not be empty");
 			return false;
 		}
+		
+		if(userInput.length() != 13) {
+			System.out.println("Please enter your book's 13 digit ISBN code.");
+			return false;
+		}
 		try {
-			Integer isbn = Integer.parseInt(userInput.substring(3)); //check if integers are input and if 4th digit is less than 2
+			Integer isbn = Integer.parseInt(userInput.substring(4)); //check if integers are input and if 4th digit is less than 2
 			}catch(NumberFormatException e) {
 				System.out.println("ERROR! Please enter the 13 digit ISBN number in solely "
 						+ "counting numbers."); // error message	
 				return false;
 			}
 		
-		if(userInput.length() != 13) {
-			System.out.println("Please enter your book's 13 digit ISBN code.");
-			return false;
-		}
 		
 		
 		return true;
@@ -101,7 +102,7 @@ public class BookStoreDriver {
 					break;
 		}
 		
-		Integer isbn = Integer.parseInt(isbnString.substring(3));
+		Integer isbn = Integer.parseInt(isbnString.substring(4));
 			System.out.println(bookStore.remove(isbn)); //Buy the book.
 				
 			
@@ -131,7 +132,7 @@ public class BookStoreDriver {
 					break;
 					
 				}
-		Integer isbn = Integer.parseInt(isbnString.substring(3));
+		Integer isbn = Integer.parseInt(isbnString.substring(4));
 			
 			System.out.println("Please enter the book title.");
 			String title = "";
@@ -201,7 +202,7 @@ public class BookStoreDriver {
 					System.out.println("Thanks for stopping by!");
 					break;
 				}
-		Integer isbn = Integer.parseInt(isbnString.substring(3));
+		Integer isbn = Integer.parseInt(isbnString.substring(4));
 		if(bookStore.containsBook(isbn)) {
 			System.out.println("Looks like we have that book. \n");
 		}else {
