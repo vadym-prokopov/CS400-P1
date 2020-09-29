@@ -44,18 +44,18 @@ public class TestSuite {
 	@Test
 	public void testBookStoreInitial() {
 		// Tests that the BookStore contains initial books in BookData.txt
-		assertEquals(true, _bookStoreInstance.containsBook(1501145254));
-		assertEquals(true, _bookStoreInstance.containsBook(1771681926));
-		assertEquals(true, _bookStoreInstance.containsBook(1442402973));
+		assertEquals(true, _bookStoreInstance.containsBook(501145254));
+		assertEquals(true, _bookStoreInstance.containsBook(771681926));
+		assertEquals(true, _bookStoreInstance.containsBook(442402973));
 		assertEquals(true, _bookStoreInstance.containsBook(64442466));
 	}
 
 	@Test
 	public void testBookStoreGet() {
 		// Test BookStore's retrieval method
-		Book book = _bookStoreInstance.getBook(1501145254);
+		Book book = _bookStoreInstance.getBook(501145254);
 		System.out.println(book);
-		assertEquals(1501145254, book.getIsbn());
+		assertEquals(501145254, book.getIsbn());
 		assertEquals("My_Own_Words", book.getTitle());
 		assertEquals("Bibliography", book.getGenre());
 		assertEquals(2, book.getQuantity());
@@ -65,9 +65,9 @@ public class TestSuite {
 	public void testBookStoreExistingBookDonation() {
 		// Test donation and retrieval of an existing Book in the BookStore
 		BookStore _bookStoreInstance = new BookStore();
-		Book tmp_book = new Book(1501145254, "My_Own_Words", "Bibliography", 2);
-		assertEquals(true, _bookStoreInstance.donate(1501145254, tmp_book));
-		Book book = _bookStoreInstance.getBook(1501145254);
+		Book tmp_book = new Book(501145254, "My_Own_Words", "Bibliography", 2);
+		assertEquals(true, _bookStoreInstance.donate(501145254, tmp_book));
+		Book book = _bookStoreInstance.getBook(501145254);
 		assertEquals(4, book.getQuantity());
 	}
 
