@@ -1,3 +1,10 @@
+// --== CS400 File Header Information ==--
+// Name: Elaine Zheng
+// Email: ezheng6@wisc.edu
+// Team: EE
+// TA: Keren
+// Lecturer: Gary Dahl
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -17,15 +24,15 @@ public class BookCollection {
    * Gets the array of books
    * 
    * @return the initialBooksArray
- * @throws FileNotFoundException 
+   * @throws FileNotFoundException
    */
   public Book[] getInitialBooks() {
-	  try {
-		addInitialBooksToTable();
-	} catch (FileNotFoundException e) {
-		System.out.println("Did not find initial books file.");
-	}
-	  return initialBooksArray;
+    try {
+      addInitialBooksToTable();
+    } catch (FileNotFoundException e) {
+      System.out.println("Did not find initial books file.");
+    }
+    return initialBooksArray;
   }
 
 
@@ -52,7 +59,7 @@ public class BookCollection {
 
     int isbn = 0;
     String title = null; // spaces are indicated with _
-    //int price = 0;
+    // int price = 0;
     String genre = null;
     int quantity = 0;
 
@@ -61,11 +68,9 @@ public class BookCollection {
       Scanner readLine = new Scanner(line);
 
       while (readLine.hasNext()) {
-        isbn = readLine.nextInt(); // first 3 numbers (978) of actual ISBN # are cut out, thus isbn
-                                   // variable stores last 10 digits of actual ISBN # (starts with 1
-                                   // or 0)
+        isbn = readLine.nextInt(); // first 4 numbers (9781) of actual ISBN # are cut out, thus isbn
+                                   // variable stores last 10 digits of actual ISBN #
         title = readLine.next();
-        //price = readLine.nextInt();
         genre = readLine.next();
         quantity = readLine.nextInt();
       }
@@ -74,11 +79,10 @@ public class BookCollection {
       Book book = new Book(isbn, title, genre, quantity);
       initialBooksArray[size] = book;
       size++;
-      
+
     }
     inFile.close();
   }
-
 
   /**
    * Gets size of array
