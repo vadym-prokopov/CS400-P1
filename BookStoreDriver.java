@@ -1,3 +1,12 @@
+// --== CS400 File Header Information ==--
+// Name: Jason Kaminski
+// Email: jdkaminski@wisc.edu
+// Team: EE
+// Role: Front-End Developer
+// TA: Keren Chen
+// Lecturer: Gary Dahl
+// Notes to Grader: none !
+
 import java.util.Scanner;
 import java.lang.NumberFormatException;
 public class BookStoreDriver {
