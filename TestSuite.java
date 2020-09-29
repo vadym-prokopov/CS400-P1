@@ -4,8 +4,8 @@
 // Team: EE
 // TA: Keren Chen
 // Lecturer: Florian Heimerl
-// Notes to Grader: This class is meant to do the work of setting up the hash table for the incoming books. This has some preliminary stuff, so it will
-// need to be constructed by the user.
+// Notes to Grader: System tests were not implemented (as written in the proposal) due to them 
+// being equivalent (and effective if not less) as testing individual methods of the BookStore class
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;

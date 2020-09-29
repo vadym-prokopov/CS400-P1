@@ -1,3 +1,11 @@
+// --== CS400 File Header Information ==--
+// Name: Vadym Prokopov
+// Email: prokopov@wisc.edu
+// Team: EE
+// TA: Keren Chen
+// Lecturer: Florian Heimerl
+// Notes to Grader: HashTableMap Implementation
+
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
